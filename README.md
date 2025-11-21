@@ -1,16 +1,5 @@
-# React + Vite
+Firebase lo utilicé principalmente para las notificaciones push, ya que su servicio de Firebase Cloud Messaging (FCM) permite enviar avisos a la PWA incluso cuando el navegador está cerrado. Con esto la aplicación puede alertar al usuario sobre recordatorios o acciones importantes sin necesidad de tener la app abierta.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+La aplicación trata de un panel de recordatorios tipo PWA, donde el usuario puede crear, editar y recibir avisos. Funciona como una herramienta ligera que se instala en el dispositivo y aprovecha tecnologías modernas como service workers, notificaciones y almacenamiento local.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para desarrollarla trabajé con React + Vite como base del frontend, junto con Bootstrap para el diseño. Además, se utilizó un service worker personalizado para manejar la lógica de las notificaciones y la comunicación con Firebase, integrando así una experiencia más cercana a una app móvil.
